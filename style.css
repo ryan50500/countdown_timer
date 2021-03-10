@@ -1,0 +1,156 @@
+/* CSS RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ul[class], ol[class] {
+    padding: 0;
+}
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+ul[class], ol[class] {
+    list-style: none;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+article>*+* {
+    margin-top: 1em;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* fonts  */
+@import url(//db.onlinewebfonts.com/c/61ca3f1140271b3dd7c06314ff3c5249?family=SoundtrackBold);
+@font-face {font-family: "SoundtrackBold"; src: url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.eot"); src: url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.woff") format("woff"), url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.svg#SoundtrackBold") format("svg"); }
+
+/* main styles */
+#cv-lightbox {
+    margin: 0 auto;
+    position: relative;
+    width: 552px;
+    height: 351px;
+}
+.gradient {
+    position: absolute;
+    background: radial-gradient(100.91% 249.56% at 0% 0%, #70A929 0%, #86B935 100%);
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+  .stripes {
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.05) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.05) 75%, transparent 75%, transparent);
+    background-size: 10px 10px;
+    position: absolute;
+    border: 5px solid #FFFFFF;
+  }
+  .center_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 56%;
+    transform: translate(0, -50%);
+    position: relative;
+}
+.discount_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.center_content .title {
+    font-family: 'SoundtrackBold';
+    text-shadow: 1px 2px 2px rgb(0 0 0 / 40%);
+    font-size: 95px;
+    color: #ffffff;
+    line-height: 80px;
+}
+
+.sub_title {
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-Serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 7px;
+}
+
+input#email {
+    width: 460px;
+    height: 44px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 1px 3px rgb(0 0 0 / 60%);
+    border-radius: 3px;
+    color: transparent;
+    border: none;
+    margin: 20px 0 15px 0;
+}
+
+input::placeholder {
+    color: #AAAAAA;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    text-align: center;
+}
+
+input.form_submit {
+    width: 290px;
+    height: 43px;
+    background: linear-gradient(180deg, #F3A427 0%, #EF8F24 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    border: none;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+.lorum {
+font-family: Helvetica Neue;
+font-size: 11px;
+color: #FFFFFF;
+padding-top: 28px;
+}
+
+.timer {
+    position: relative;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%, -50%);
+    width: 185px;
+    height: 85px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+    text-align: center;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.offer {
+    font-family: Helvetica Neue;
+    color: #666666;
+    font-size: 16px;
+}
+
+.countdown {
+    font-family: Helvetica;
+    font-size: 40px;
+    color: #F29D26;
+    line-height: 47px;
+}
