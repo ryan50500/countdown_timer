@@ -86,7 +86,8 @@ div#cv-lightbox {
 	background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 75%, transparent 75%, transparent);
 	background-size: 10px 10px;
 	position: absolute;
-	border: 5px solid #FFFFFF;
+    border: 5px solid #FFFFFF;
+    z-index: 1;
 }
 .center_content {
 	display: -webkit-box;
@@ -176,7 +177,7 @@ input.form_submit:hover {
 	box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
 	text-align: center;
 	padding-top: 10px;
-	z-index: 1;
+	z-index: 5;
 }
 .offer {
 	font-family: Helvetica Neue;
@@ -238,4 +239,11 @@ input.form_submit:hover {
 	color: #666666;
 	transition: 0.5s all ease;
 	cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+.whole_container {
+    transform: scale(0.6);
+    }
 }
