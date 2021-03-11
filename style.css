@@ -76,7 +76,7 @@ div#cv-lightbox {
 	position: absolute;
 	background: radial-gradient(100.91% 249.56% at 0% 0%, #70A929 0%, #86B935 100%);
 	background: -ms-radial-gradient(100.91% 249.56% at 0% 0%, #70A929 0%, #86B935 100%);
-    background: -o-radial-gradient(0% 0%, 100.91% 249.56%, #70A929 0%, #86B935 100%);
+	background: -o-radial-gradient(0% 0%, 100.91% 249.56%, #70A929 0%, #86B935 100%);
 	height: 100%;
 	width: 100%;
 	z-index: -1;
