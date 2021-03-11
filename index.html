@@ -8,16 +8,25 @@
     rel="stylesheet"
   />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="//db.onlinewebfonts.com/c/61ca3f1140271b3dd7c06314ff3c5249?family=SoundtrackBold" rel="stylesheet" type="text/css"/>
     <title>question one</title>
 </head>
 <body>
 
     <div id="cv-lightbox">
+        <div class="whole_container">
+            <div class="close_icon">
+                <div class="closeX">
+                    <span>X</span>
+                </div>
+            </div>
         <div class="timer">
             <p class="offer">This offer expires in</p>
-            <p class="countdown">2:00</p>
+            <p id="countdown"></p>
         </div>
+        <div class="container">
+        <div class="flowers"></div>
         <div class="gradient"></div>
           <div class="stripes"></div>
           <div class="center_content">
@@ -30,7 +39,9 @@
                 </form>
                 <p class="lorum">Aliquam erat volutpat. Phasellus pellentesque erat volutpat. Phasellus</p>
           </div>
+        </div>
       </div>
+    </div>
 
 
     <script src="script.js"></script>

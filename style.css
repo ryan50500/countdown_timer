@@ -41,11 +41,25 @@ input, button, textarea, select {
 @font-face {font-family: "SoundtrackBold"; src: url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.eot"); src: url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.woff") format("woff"), url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/61ca3f1140271b3dd7c06314ff3c5249.svg#SoundtrackBold") format("svg"); }
 
 /* main styles */
-#cv-lightbox {
-    margin: 0 auto;
+div#cv-lightbox {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whole_container {
+    /* container now centered on page, offsetting 37px of timer positioning  */
+    margin-top: -37px;
+    position: relative;
+}
+.container {
     position: relative;
     width: 552px;
     height: 351px;
+    overflow: hidden;
 }
 .gradient {
     position: absolute;
@@ -67,8 +81,8 @@ input, button, textarea, select {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 56%;
-    transform: translate(0, -50%);
+    top: 8%;
+    /* transform: translate(0, -50%); */
     position: relative;
 }
 .discount_form {
@@ -82,6 +96,7 @@ input, button, textarea, select {
     font-size: 95px;
     color: #ffffff;
     line-height: 80px;
+    padding: 28px 0 0 0;
 }
 
 .sub_title {
@@ -97,7 +112,6 @@ input#email {
     background: #FFFFFF;
     box-shadow: inset 0px 1px 3px rgb(0 0 0 / 60%);
     border-radius: 3px;
-    color: transparent;
     border: none;
     margin: 20px 0 15px 0;
 }
@@ -121,18 +135,21 @@ input.form_submit {
     color: #FFFFFF;
     margin: 0 auto;
 }
+input.form_submit:hover{
+    background: linear-gradient(180deg, #E79C25 0%, #E48822 100%);
+    cursor: pointer;
+}
+
 .lorum {
 font-family: Helvetica Neue;
 font-size: 11px;
 color: #FFFFFF;
 padding-top: 28px;
 }
-
 .timer {
     position: relative;
-    left: 50%;
-    top: 22%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    top: 37px;
     width: 185px;
     height: 85px;
     background: #FFFFFF;
@@ -148,9 +165,51 @@ padding-top: 28px;
     font-size: 16px;
 }
 
-.countdown {
+#countdown {
     font-family: Helvetica;
     font-size: 40px;
     color: #F29D26;
     line-height: 47px;
+}
+
+.flowers {
+    background-image: url(./images/flowers.png);
+    position: absolute;
+    top: 28%;
+    left: -29%;
+    background-size: 63%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.close_icon {
+    position: absolute;
+    z-index: 99999;
+    top: 71px;
+    right: -12.5px;
+    width: 29px;
+    height: 29px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-Serif;
+    color: #A9A9A9;
+    background-color: #FFFFFF;
+    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.3));
+    border-radius: 50%;
+}
+.closeX {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.closeX span {
+    transform: translate(1%, 0);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.close_icon:hover {
+    color: #666666;
+    transition: 0.5s all ease;
+    cursor: pointer;
 }
